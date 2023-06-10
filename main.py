@@ -294,7 +294,7 @@ def get_university(universities):
 
 
 # получение военной службы
-def get_military(military):
+# def get_military(military):
     if military:
         unit = military.get('unit', 'не указано')
         unit_id = military.get('unit_id', 'не указано')
@@ -385,7 +385,7 @@ def get_user_info(api, user_id):
 
 
         # получение военной службы
-        military_info = get_military(user_info.get('military', {}))
+#         military_info = get_military(user_info.get('military', {}))
 
 
         # получение жизненной позиции
@@ -404,7 +404,7 @@ def get_user_info(api, user_id):
             'Школа': school_info,
             'Университет': university_info,
             'Карьера': career_info,
-            'Военная служба': military_info,
+#             'Военная служба': military_info,
             'Жизненная позиция': life_position,
             'Друзья': friends
         }
